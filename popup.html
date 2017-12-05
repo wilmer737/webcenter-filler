@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webcenter Timecard Filler</title>
+    <style type="text/css">
+        #container {
+            padding: 16px;
+            width: 225px;
+        }
+
+        .error {
+            visibility: hidden;
+            color: #d7413b;
+            margin: 16px 0;
+        }
+
+        #submit-btn {
+            padding: 15px;
+            border-radius: 14px;
+            color: #d7413b;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Webcenter Filler</h1>
+        <div>
+            <label for="start">Punch In:</label>
+            <input type="time" id="start">
+        </div>
+        <div>
+            <label for="lunch-start">Lunch Out:</label>
+            <input type="time" id="lunch-start">
+        </div>
+        <div>
+            <label for="lunch-end">Lunch In:</label>
+            <input type="time" id="lunch-end">
+        </div>
+        <div>
+            <label for="end">Punch Out:</label>
+            <input type="time" id="end">
+        </div>
+        <div class="error">Make sure to fill out all fields</div>
+        <div>
+            <button id="submit-btn">Fill Timecard</button>
+        </div>
+    </div>
+
+</body>
+</html>
